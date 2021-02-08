@@ -1,5 +1,6 @@
 <?php 
     require_once __DIR__. "/classes/camera.php";
+    require_once __DIR__. "/classes/computer.php";
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +21,9 @@
     <main>
 
         <?php 
-            $CameraReflex = new Camera("nikon", "d7000", 700.00);
+            $CameraReflex = new Camera("nikon", "d7000", 700.00);    
+            
+            $ComputerApple = new Computer("apple", "MacBookAir", 1600.00);
         ?>
         <div>
             <h2>Camera</h2>
@@ -29,6 +32,12 @@
             <h4>price: <?php echo $CameraReflex->Price(); ?> €</h4>
         </div>
         
+        <div>
+            <h2>Computer</h2>
+            <img src="" alt="">
+            <p> <?php echo $ComputerApple->InfoProduct(); ?></p>
+            <h4>price: <?php echo $ComputerApple->Price(); ?> €</h4>
+        </div>
     </main>
 </body>
 </html>
