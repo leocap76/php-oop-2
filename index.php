@@ -25,18 +25,18 @@
             
             $ComputerApple = new Computer("apple", "MacBookAir", 1600.00);
         ?>
-        <div>
+        <div class="container">
             <h2>Camera</h2>
             <img src="" alt="">
-            <p> <?php echo $CameraReflex->InfoProduct(); ?></p>
-            <h4>price: <?php echo $CameraReflex->Price(); ?> €</h4>
+            <p> <?php echo $CameraReflex->getInfoProduct(); ?></p>
+            <h4>price: <?php echo $CameraReflex->getPrice(); ?> €</h4>
         </div>
         
-        <div>
+        <div class="container">
             <h2>Computer</h2>
             <img src="" alt="">
-            <p> <?php echo $ComputerApple->InfoProduct(); ?></p>
-            <h4>price: <?php echo $ComputerApple->Price(); ?> €</h4>
+            <p> <?php echo $ComputerApple->getInfoProduct(); ?></p>
+            <h4>price: <?php echo $ComputerApple->getPrice(); ?> €</h4>
         </div>
     </main>
 </body>

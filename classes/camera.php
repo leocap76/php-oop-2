@@ -11,7 +11,7 @@
             parent::__construct($brand, $model);
             $this->price = $price;
         }
-        public function Price()
+        public function getPrice()
         {
             return $this->price;
         }

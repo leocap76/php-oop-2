@@ -9,7 +9,7 @@
         $this->brand = $brand;
         $this->model = $model;
     }
-    public function InfoProduct()
+    public function getInfoProduct()
     {
         return $this->brand. " ".$this->model;
     }
